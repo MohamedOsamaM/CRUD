@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>CRUD</title>
+  </head>
+  <body class="bg-dark">
+    <h1 class="text-center text-success pt-5">CRUD</h1>
+    <div class="container mt-5">
+      <div class="form-floating mb-3">
+        <input
+          type="text"
+          class="form-control"
+          id="ProductName"
+          placeholder="Product Name"
+        />
+        <label for="ProductName">Product Name</label>
+      </div>
+      <div class="form-floating mb-3">
+        <input
+          type="number"
+          class="form-control"
+          id="ProductPrice"
+          placeholder="Product Price"
+        />
+        <label for="ProductPrice">Product Price</label>
+      </div>
+      <div class="form-floating mb-3">
+        <input
+          list="productList"
+          type="text"
+          class="form-control"
+          id="ProductCategory"
+          placeholder="Product Category"
+        />
+        <label for="ProductCategory">Product Category</label>
+      </div>
+      <datalist id="productList">
+        <option value="TV"></option>
+        <option value="Mobile"></option>
+        <option value="Laptop"></option>
+        <option value="Screens"></option>
+        <option value="Electronics"></option>
+      </datalist>
+      <div class="form-floating mb-3">
+        <textarea
+          type="text"
+          class="form-control"
+          id="ProductDesc"
+          placeholder="Product Desc"
+        ></textarea>
+        <label for="ProductDesc">Product Desc</label>
+      </div>
+      <div class="form-floating mb-3">
+        <input
+          type="file"
+          class="form-control"
+          id="ProductPic"
+          placeholder="Product Pic"
+        />
+        <label for="ProductPic">Product Pic</label>
+      </div>
+      <button
+        class="btn btn-outline-primary d-block mx-auto w-100 mb-5"
+        id="btn-add"
+      >
+        Add Data
+      </button>
+      <button
+        class="btn btn-outline-warning d-none mx-auto w-100 mb-5"
+        id="btn-update"
+      >
+        Update Data
+      </button>
+      <div class="form-floating mb-5">
+        <input
+          type="search"
+          class="form-control"
+          id="search"
+          placeholder="search"
+        />
+        <label for="search" class="text-secondary">Search By Name</label>
+      </div>
+      <div class="row g-5 mb-5" id="rowData"></div>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>
